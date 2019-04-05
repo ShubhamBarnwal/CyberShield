@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Shield</title>
+</head>
+<body>
+<form method="POST">
+<h1>Redirecting to Cyber Shield</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+    function ExtractURL() {
+        var window_url = window.location.href;
+        var access_token = window_url.match(/\#(?:access_token)?(.*)/);
+        if (access_token != null) {
+            access_token = access_token.toString().split("=")[1];
+        }
+        $.ajax({
+            url: '/accessToken',
+            type: 'POST',
+            data: {'token' : access_token},
+            success: function(){
+                console.log("access token sent: "+ access_token)
+            }
+        });
+        return access_token;
+    };
+    ExtractURL();
+    function wait(ms)
+    {
+        var d = new Date();
+        var d2 = null;
+        do { d2 = new Date(); }
+        while(d2-d < ms);
+    }
+    wait(30000);
+    window.location.replace("/index")
+
+</script>
+</form>
+</body>
+</html>

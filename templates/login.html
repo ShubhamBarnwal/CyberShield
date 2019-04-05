@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cyber Shield - Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+<script>
+
+
+</script>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Cyber Shield</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="https://api.instagram.com/oauth/authorize/?client_id=5d4680b611e94633ab68135234bc36ec&redirect_uri=http://127.0.0.1:5000/accessToken&response_type=token">Login Here</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="text-white" style="background-color: #4e73df">
+    <div class="container text-center">
+        <img src="../static/image/logo1_blue.png">
+        <h1>Welcome to Cyber Shield</h1>
+        <p class="lead">Our application allows you protect your child's safety online by monitoring their social media activity for cyber bullying and mental health concerns, saving you time and putting your mind at ease.
+        </p>
+    </div>
+</header>
+
+<section id="about">1    <div class="container">
+    <div class="row">
+        <div class="col-xl-3">
+            <img class="img-profile rounded-circle" src="../static/image/user1.jpg">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Stephan Negus</h6>
+            </div>
+        </div>
+        <div class="col-xl-3">
+            <img class="img-profile rounded-circle" src="../static/image/user2.jpg">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Hardik Uppal</h6>
+            </div>
+        </div>
+        <div class="col-xl-3">
+            <img class="img-profile rounded-circle" src="../static/image/user3.jpg">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Kristen Perry</h6>
+            </div>
+        </div>
+        <div class="col-xl-3">
+            <img class="img-profile rounded-circle" src="../static/image/user4.jpg">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Shubham Barnwal</h6>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="contact" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4">
+                <img style="height: 300px;" src="../static/image/ii-cyberbullying.jpg">
+            </div>
+            <div class="col-xl-4">
+                <img style="height: 300px;" src="../static/image/CYBERNO.jpg">
+            </div>
+            <div class="col-xl-4">
+                <img style="height: 300px;" src="../static/image/Cyber-bullying.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <img style="height: 300px;" src="../static/image/537104_41065708.jpg">
+            </div>
+            <div class="col-xl-4">
+                <img style="height: 300px;" src="../static/image/download.jpg">
+            </div>
+            <div class="col-xl-4">
+                <img style="height: 300px;" src="../static/image/cyberbullying.jpg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Team 5 - CyberShield</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script type = "text/javascript"
+        src = "{{ url_for('static', filename = 'vendor/jquery/jquery.min.js') }}"></script>
+<script type = "text/javascript"
+        src = "{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+<!-- Plugin JavaScript -->
+<script type = "text/javascript"
+        src = "{{ url_for('static', filename = 'vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+<!-- Custom JavaScript for this theme -->
+<script type = "text/javascript"
+        src = "{{ url_for('static', filename = 'js/scrolling-nav.js') }}"></script>
+
+</body>
+
+</html>
